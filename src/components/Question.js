@@ -22,6 +22,8 @@ function Question({ question, onAnswered }) {
     setTimeRemaining(10);
     onAnswered(isCorrect);
   }
+  
+  
 
   const { id, prompt, answers, correctIndex } = question;
 
@@ -40,6 +42,7 @@ function Question({ question, onAnswered }) {
       <h5>{timeRemaining} seconds remaining</h5>
     </>
   );
+
 }
 
 export default Question;
